@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNU RENT PAGE</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <a href="login.html">
+            <h1>CNU RENTCAR</h1>
+        </a>
+        
+   
+        <h2>대여내역 검색</h2>
+        <label for="modelname">대여한 모델 :</label>
+        <select id="modelname" name="modelname">
+            <option value="a">아반떼</option>
+            <option value="sso">쏘나타</option>
+            <option value="ca">카니발</option>
+            <option value="ssan">싼타페</option>
+            <option value="tu">투싼</option>
+            <option value="total">전체</option>
+        </select>
+        <button id="rentSearchBtn" type="submit">검색</button>
+        
+        <div id="rentSearchResult"></div>
+
+        <script src="rent.js"></script>
+    </body>
+</html> 
+

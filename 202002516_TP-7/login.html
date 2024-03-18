@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <a href="login.html">
+    <h1>CNU RENTCAR</h1>
+  </a>
+  <!-- <form method="POST"> -->
+    <table id="loginBeforeTable">
+      <tr>
+        <td><span>ID</span></td>
+        <td><input id="cno" name="cno" type="number" placeholder="학번 (cno)"></td>
+        <td rowspan="2"><button type="submit" id="loginBtn" style="height: 50px;">LOGIN</button></td>
+      </tr>
+      <tr>
+        <td><span>PW</span></td>
+        <td><input id="passwd" name="passwd" type="password" placeholder="비밀번호 (password)"></td>
+      </tr>
+    </table>
+  <!-- </form> -->
+
+  <div id="loginAfterTable">
+    <table>
+      <tr>
+          <td><p id="cname"></p></td>
+          <th rowspan="2"><button id="logoutBtn">LOGOUT</button></th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="notManager">
+    <a href="./search.php">
+      <button type="submit" id="searchBtn">차량 검색하기
+    </a>
+    <a href="./mypage.html">
+      <button type="submit" id="mypageBtn">마이페이지
+    </a>
+  </div>
+
+  <button id="manager">차량통계기록</button>
+  
+  <br>
+  <div id="recordTable" style="display: none;"></div><br>
+  <div id="recordTable2" style="display: none;"></div><br>
+  <div id="recordTable3" style="display: none;"></div><br>
+
+  <script src="login.js"></script>
+    
+</body>
+</html>
+
